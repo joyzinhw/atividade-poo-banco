@@ -1,14 +1,18 @@
 package depressao;
 
 public class Aluno {
-	String nome_aluno;
-	String e_mail_alu;
-	String data_de_nascimento;
+	private String nome_aluno;
+	private String e_mail_alu;
+	Private String data_de_nascimento;
 	
-	void dadosAluno(){
-        System.out.println("Nome do Aluno: " + nome_aluno);
-        System.out.println("E-mail: " + e_mail_alu);
-        System.out.println("Data de Nasciemnto: " + data_de_nascimento + "\n");
-     
-    }
-}
+        public Aluno(String nome_aluno, String e_mail_alu, DateLocal) {
+    this.nome_aluno = nome_aluno;
+    this.e_mail_alu = e_mail_alu;
+    this.data_de_nascimento = data_de_nascimento;
+  }
+
+  public String getNome() {
+    return nome_alu;
+  }
+ 
+  
