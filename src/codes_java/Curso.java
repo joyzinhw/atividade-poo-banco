@@ -20,37 +20,38 @@ public class Curso {
     this.alunos = new ArrayList<>();
 }
 
-  public void realizarMatricula(Aluno aluno) {
+    public void realizarMatricula(Aluno aluno) {
     this.alunos.add(aluno);
 }
- public void setNome(String nome_curso) {
+    public void setNome(String nome_curso) {
     this.nome_curso = nome_curso;
 }
 
-  public void setCh(int carga_horaria) {
+    public void setCh(int carga_horaria) {
     this.carga_horaria = carga_horaria;
 }
-public String getNome() {
+
+    public String getNome() {
     return this.nome_curso;
 }
-}
 
-  public String getNivel() {
+    public String getNivel() {
     return nivel;
 }
 
-  public int getCh() {
+    public int getCh() {
     return carga_horaria;
 }
-public String getNomeProfessor() {
+    public String getNomeProfessor() {
     return this.professor.getNome();
 }
 
-  public Professor getProfessor() {
+    public Professor getProfessor() {
     return professor;
 }
 
-  public List<Aluno> getAlunos() {
+    public List<Aluno> getAlunos() {
     return alunos;
- }
+}
+} 
 
