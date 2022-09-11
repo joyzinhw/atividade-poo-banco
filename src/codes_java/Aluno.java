@@ -2,17 +2,27 @@ package depressao;
 
 public class Aluno {
 	private String nome_aluno;
-	private String e_mail_alu;
-	Private String data_de_nascimento;
+	private String email_alu;
+	private Date data_de_nascimento;
 	
-        public Aluno(String nome_aluno, String e_mail_alu, DateLocal) {
+        public Aluno(String nome_aluno, String e_mail_alu, Date data_de_nascimento) {
           this.nome_aluno = nome_aluno;
-          this.e_mail_alu = e_mail_alu;
+          this.email_alu = email_alu;
           this.data_de_nascimento = data_de_nascimento;
  }
 
-        public String getNome() {
-          return nome_alu;
- }
- 
+        public String getNome_aluno() {
+          return nome_aluno;
+    }
+        public void setNome_aluno(String nome_aluno) {
+         this.nome_aluno = nome_aluno;
+    }
+        public String getEmail_aluno() {
+	  return email_alu;
+}
+        public void setEmail_aluno(String email_alu) {
+           this.email_alu = email_alu;
+    }
+    
+}
   
