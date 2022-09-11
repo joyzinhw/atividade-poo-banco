@@ -2,15 +2,23 @@ package depressao;
 
 public class Professores {
 	
-	String nome_prof;
-	String e_mail_prof;
-	String formação;
+	private String nome_prof;
+	private String email_prof;
+	private String formacao;
 
-	void dadosProfessores() {
-        System.out.println("Nome do Professor: " + nome_prof);
-        System.out.println("E-mail: " + e_mail_prof);
-        System.out.println("Formação: " + formação + "\n");
-     
+       public Professor(String nome_prof){
+        this.nome_prof = nome_prof;
     }
-	
+
+    public String getNome() {
+        return nome_prof;
+    }
+    public String getFormacao() {
+        return formacao;
+    }
+    public String getEmail() {
+        return email_prof;
+    }
+
+
 }
