@@ -1,5 +1,9 @@
 package depressao;
 
+
+import java.util.Date;
+import java.util.List;
+
 public class Curso {
 	
 
@@ -7,51 +11,60 @@ public class Curso {
     private int carga_horaria;
     private String modalidade;
     private String nivel;
-    private String data_de_inicio;
-    private String data_de_fim;
-    private String gratuito;
+    private Date data_de_inic;
+    private Date data_de_fim;
+    private Boolean gratuito;
     private Professor professor;
+    public List<Aluno> alunos;
 }
-    public Curso(String nome_curso, String nivel, int carga_horaria, Professor professor) {
+
+    public Curso(String nome_curso, int carga_horaria, String modalidade, String nivel, Boolean gratuito, Professor professor) {
     this.nome_curso = nome_curso;
-    this.nivel = nivel;
     this.carga_horaria = carga_horaria;
+    this.modalidade = modalidade; 
+    this.nivel = nivel;
+    this.gratuito = gratuito;
     this.professor = professor;
     this.alunos = new ArrayList<>();
 }
 
-    public void realizarMatricula(Aluno aluno) {
-    this.alunos.add(aluno);
-}
-    public void setNome(String nome_curso) {
-    this.nome_curso = nome_curso;
-}
+     public Curso(Date data_de_inic, Date data_de_fim ){
+        this.data_de_inic = data_de_inic;
+        this.data_de_fim = data_de_fim;
 
-    public void setCh(int carga_horaria) {
-    this.carga_horaria = carga_horaria;
-}
+    }
 
-    public String getNome() {
-    return this.nome_curso;
-}
-
+   public String getNome_curso() {
+        return nome_curso;
+    }
+    public void setNome_curso(String nome_curso) {
+        this.nome_curso = nome_curso;
+    }
+    public int getCarga_horaria() {
+        return carga_horaria;
+    }
+    public void setCarga_horaria(int carga_horaria) {
+        this.carga_horaria = carga_horaria;
+    }
+    public String getModalidade() {
+        return modalidade;
+    }
+    public void setModalidade(String modalidade) {
+        this.modalidade = modalidade;
+    }
     public String getNivel() {
-    return nivel;
-}
+        return nivel;
+    }
+    public void setNivel(String nivel) {
+        this.nivel = nivel;
+    }
+   
+    public boolean isGratuito() {
+        return gratuito;
+    }
+    public void setGratuito(boolean gratuito) {
+        this.gratuito = gratuito;
+    }
 
-    public int getCh() {
-    return carga_horaria;
-}
-    public String getNomeProfessor() {
-    return this.professor.getNome();
-}
-
-    public Professor getProfessor() {
-    return professor;
-}
-
-    public List<Aluno> getAlunos() {
-    return alunos;
-}
-} 
-
+    
+    }
