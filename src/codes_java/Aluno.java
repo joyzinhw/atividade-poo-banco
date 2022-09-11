@@ -23,6 +23,11 @@ public class Aluno {
         public void setEmail_aluno(String email_alu) {
            this.email_alu = email_alu;
     }
-    
+         public String getData_de_nascimento() {
+          return data_de_nascimento;
+    }
+        public void setData_de_nascimento(String data_de_nascimento) {
+         this.data_de_nascimento = data_de_nascimento;
+    }
 }
   
