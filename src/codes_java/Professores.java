@@ -10,13 +10,13 @@ public class Professores {
         this.nome_prof = nome_prof;
     }
 
-    public String getNome() {
+    public String getNome_Prof() {
         return nome_prof;
     }
     public String getFormacao() {
         return formacao;
     }
-    public String getEmail() {
+    public String getEmail_Prof() {
         return email_prof;
     }
 
