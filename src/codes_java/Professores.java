@@ -6,7 +6,7 @@ public class Professores {
 	private String email_prof;
 	private String formacao;
 
-       public Professor(String nome_prof){
+       public Professores(String nome_prof){
         this.nome_prof = nome_prof;
     }
 
@@ -22,3 +22,4 @@ public class Professores {
 
 
 }
+//ta legal
