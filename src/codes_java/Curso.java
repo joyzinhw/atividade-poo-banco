@@ -3,9 +3,9 @@ package depressao;
 
 import java.util.Date;
 
-//ta meio errado
+//ta certo
 public class Curso {
-	
+    
 
     private String nome_curso;
     private int carga_horaria;
@@ -14,65 +14,53 @@ public class Curso {
     private Date data_de_inic;
     private Date data_de_fim;
     private Boolean gratuito;
-    private Professores professores;
+    private Professor professor;
     
-}
 
-        /**
-         * @param nome_curso
-         * @param carga_horaria
-         * @param modalidade
-         * @param nivel
-         * @param gratuito
-         * @param professores
-         */
-        public Curso(String nome_curso, int carga_horaria, String modalidade, String nivel, Boolean gratuito, Professores professores) {
+
+        
+        public Curso(String nome_curso, int carga_horaria, String modalidade) {
           this.nome_curso = nome_curso;
           this.carga_horaria = carga_horaria;
           this.modalidade = modalidade; 
-          this.nivel = nivel;
-          this.gratuito = gratuito;
-          this.professores = professores;
     
 }
+        public Curso(String nivel, Boolean gratuito) { 
 
+          this.nivel = nivel;
+          this.gratuito = gratuito;
+          
+
+ }         
         public Curso(Date data_de_inic, Date data_de_fim ){
           this.data_de_inic = data_de_inic;
           this.data_de_fim = data_de_fim;
-
-}
-
-        public String getNome_curso() {
+         
+    }
+        public Date getData_De_Inc() {
+        return data_de_inic;
+    }
+        public Date getData_De_Fim() {
+         return data_de_fim;
+    }
+        public String getNome_Curso() {
           return nome_curso;
     }
-
-        public void setNome_curso(String nome_curso) {
-          this.nome_curso = nome_curso;
-    }
-        public int getCarga_horaria() {
+        public int getCarga_Horaria() {
          return carga_horaria;
-    }
-         public void setCarga_horaria(int carga_horaria) {
-          this.carga_horaria = carga_horaria;
     }
          public String getModalidade() {
           return modalidade;
     }
-        public void setModalidade(String modalidade) {
-          this.modalidade = modalidade;
-    }
-    public String getNivel() {
+        public String getNivel() {
           return nivel;
     }
-    public void setNivel(String nivel) {
-        this.nivel = nivel;
+    
+        public boolean isGratuito() {
+          return gratuito;
     }
-   
-    public boolean isGratuito() {
-        return gratuito;
-    }
-    public void setGratuito(boolean gratuito) {
-        this.gratuito = gratuito;
+        public Professor getProfessor() {
+        return professor;
     }
 
-    
+    }
