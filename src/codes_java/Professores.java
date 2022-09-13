@@ -1,12 +1,12 @@
 package depressao;
 
-public class Professores {
+public class Professor {
 	
 	private String nome_prof;
 	private String email_prof;
 	private String formacao;
 
-       public Professores(String nome_prof){
+       public Professor (String nome_prof){
         this.nome_prof = nome_prof;
     }
 
@@ -22,4 +22,5 @@ public class Professores {
 
 
 }
-//ta legal
+
+//ta otim
