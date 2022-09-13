@@ -1,22 +1,22 @@
 package depressao;
 
-public class Certificado {
+
+	// certo
+      public class Certificado {
+       
+       private Professor professor;
+       private  Aluno aluno;
+       private  Curso curso;
+		
+
+        public Professor getProfessor() {
+          return professor;
+    }
+        public Aluno getAluno() {
+          return aluno;
+    }
+        public Curso getCurso() {
+          return curso;
+    }
 	
-		private String nome_aluno;
-		private Date data_de_nascimento;
-		private String nome_curso;
-		private int carga_horaria;
-		private String modalidade;
-		private String nivel; 
-		private String data_de_inic;
-		private String data_de_fim;
-		
-
-		
-
-	        
 }
-		
-		
-}
-
