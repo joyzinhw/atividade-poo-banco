@@ -24,4 +24,8 @@ public class Aluno {
           return data_de_nascimento;
  
     }
+     @Override
+    public String toString() {
+        return "Aluno [email=" + email_alu + ", Data de Nascimento =" + data_de_nascimento + ", nome=" + nome_aluno + "]";
+    }
  }
