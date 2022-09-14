@@ -22,5 +22,3 @@ public class Professor {
 
 
 }
-
-//ta otim
